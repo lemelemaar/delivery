@@ -69,3 +69,17 @@ python manage.py migrate
 
 python manage.py loaddata fixtures/initial_data.json
 ```
+
+### 8. Запустить django и react сервер:
+- django
+```
+cd backend 
+
+python manage.py runserver
+```
+- react
+```
+cd frontend
+
+npm start
+```
