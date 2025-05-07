@@ -52,7 +52,7 @@ GRANT ALL PRIVILEGES ON SCHEMA public TO your_db_user;
 ```
 
 ### 6. Настройте .env файл:
-```javascript
+```
 
 CORS_ORIGIN_WHITELIST=http://localhost:3000
 CSRF_TRUSTED_ORIGINS=http://localhost:3000
