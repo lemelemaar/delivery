@@ -9,7 +9,7 @@ from rest_framework import status, viewsets
 from .models import TypesOfPackaging, Services, DeliveryStatus, Delivery
 from .serializer import TypesOfPackagingSerializer, ServicesSerializer, DeliveryStatusSerializer, DeliverySerializer
 
-
+# Проверка авторизации
 class CheckAuthView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -17,6 +17,7 @@ class CheckAuthView(APIView):
         return Response({'message': 'Пользователь авторизован', 'username': request.user.username})
 
 
+# Авторизация
 class LoginView(APIView):
     def post(self, request):
         username = request.data.get('username')
@@ -48,6 +49,7 @@ class DeliveryViewSet(viewsets.ModelViewSet):
     serializer_class = DeliverySerializer
 
 
+# Получение csrf
 @ensure_csrf_cookie
 def csrf_view(request):
     return JsonResponse({'message': 'CSRF cookie set'})
