@@ -42,12 +42,12 @@ python manage.py loaddata fixtures/your_model.json
 ```
 psql -U postgres
 
-CREATE DATABASE db_postgres;
+CREATE DATABASE your_db_name;
 
-CREATE USER postgres WITH PASSWORD 'admin';
+CREATE USER your_db_user WITH PASSWORD 'your_password';
 
-GRANT ALL PRIVILEGES ON DATABASE db_postgres TO postgres;
+GRANT ALL PRIVILEGES ON DATABASE your_db_name TO your_db_user;
 
-GRANT ALL PRIVILEGES ON SCHEMA public TO postgres;
+GRANT ALL PRIVILEGES ON SCHEMA public TO your_db_user;
 ```
 
