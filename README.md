@@ -67,7 +67,7 @@ cd ../backend
 
 python manage.py migrate
 
-python manage.py loaddata fixtures/initial_data.json
+python manage.py loaddatautf8 fixtures/initial_data.json
 ```
 
 ### 8. Запустить django и react сервер:
