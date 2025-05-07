@@ -17,7 +17,7 @@ class CheckAuthView(APIView):
         return Response({'message': 'Пользователь авторизован', 'username': request.user.username})
 
 
-# Авторизация
+# Авторизациям
 class LoginView(APIView):
     def post(self, request):
         username = request.data.get('username')
