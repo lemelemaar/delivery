@@ -38,7 +38,7 @@ npm install
 ```
 
 ### 5. Создайте базу данных и пользователя, выдайте public права:
-```commandline
+```
 psql -U postgres
 
 CREATE DATABASE your_db_name;
