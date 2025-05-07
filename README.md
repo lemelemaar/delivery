@@ -32,4 +32,7 @@ cd backend
 
 pip install -r requiments.txt
 
+cd ../frontend
+
+npm install
 ```
