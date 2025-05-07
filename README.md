@@ -70,7 +70,7 @@ python manage.py migrate
 python manage.py loaddatautf8 fixtures/initial_data.json
 ```
 
-### 8. Запустить django и react сервер:
+### 8. Запустите django и react сервер:
 - django
 ```
 cd backend 
