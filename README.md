@@ -3,7 +3,7 @@
 
 ## Инструкция по установке и запуску:
 
-### 1. Скачайте и установите python 3.12 https://www.python.org/downloads/release/python-3120/
+### 1. Скачайте и установите python v3.12 https://www.python.org/downloads/release/python-3120/
 
 ### 2. Скачайте и установите node.js v22.15.0 https://nodejs.org/en/download или:
 ```commandline
