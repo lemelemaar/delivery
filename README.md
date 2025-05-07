@@ -48,6 +48,8 @@ CREATE USER your_db_user WITH PASSWORD 'your_password';
 GRANT ALL PRIVILEGES ON DATABASE your_db_name TO your_db_user;
 
 GRANT ALL PRIVILEGES ON SCHEMA public TO your_db_user;
+
+ALTER DATABASE your_db_name OWNER TO your_db_user;
 ```
 
 ### 6. Настройте backend/.env:
