@@ -38,7 +38,7 @@ npm install
 ```
 python manage.py migrate
 python manage.py loaddata fixtures/your_model.json
-### 5.Создайте базу данных и пользователя, выдайте public права:
+### 5. Создайте базу данных и пользователя, выдайте public права:
 ```
 psql -U postgres
 
@@ -51,3 +51,15 @@ GRANT ALL PRIVILEGES ON DATABASE your_db_name TO your_db_user;
 GRANT ALL PRIVILEGES ON SCHEMA public TO your_db_user;
 ```
 
+### 6. Настройте .env файл:
+```javascript
+
+CORS_ORIGIN_WHITELIST=http://localhost:3000
+CSRF_TRUSTED_ORIGINS=http://localhost:3000
+NAME_DB=your_db_name
+USER_DB=your_db_user
+PASSWORD_DB=your_password
+HOST_DB=localhost
+PORT_DB=5432
+
+```
