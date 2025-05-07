@@ -3,7 +3,9 @@
 
 ## Инструкция по установке и запуску:
 
-### 1. Установите node.js v22.15.0 https://nodejs.org/en/download или:
+### 1. Скачайте и установите python 3.12 https://www.python.org/downloads/release/python-3120/
+
+### 2. Скачайте и установите node.js v22.15.0 https://nodejs.org/en/download или:
 ```commandline
 winget install Schniz.fnm
 
@@ -13,14 +15,14 @@ node -v
 
 npm -v 
 ```
-### 2. Установите PostgreSQL https://www.postgresql.org/download/
+### 3. Скачайте и установите PostgreSQL https://www.postgresql.org/download/
 
-### 3. Клонируйте git репозиторий:
+### 4. Клонируйте git репозиторий:
 ```commandline
 git clone https://github.com/lemelemaar/delivery.git
 ```
 
-### 4. Создайте виртуальное окружение, установите зависимости:
+### 5. Создайте виртуальное окружение, установите зависимости:
 ```commandline
 cd delivery
 
@@ -37,7 +39,7 @@ cd ../frontend
 npm install
 ```
 
-### 5. Создайте базу данных и пользователя, выдайте public права:
+### 6. Создайте базу данных и пользователя, выдайте public права:
 ```
 psql -U postgres
 
@@ -52,7 +54,7 @@ GRANT ALL PRIVILEGES ON SCHEMA public TO your_db_user;
 ALTER DATABASE your_db_name OWNER TO your_db_user;
 ```
 
-### 6. Настройте backend/.env:
+### 7. Настройте backend/.env:
 ```
 CORS_ORIGIN_WHITELIST=http://localhost:3000
 CSRF_TRUSTED_ORIGINS=http://localhost:3000
@@ -63,7 +65,7 @@ HOST_DB=localhost
 PORT_DB=5432
 ```
 
-### 7. Выполните миграции, выгрузите содержимое справочников:
+### 8. Выполните миграции, выгрузите содержимое справочников:
 ```commandline
 cd ../backend
 
@@ -72,7 +74,7 @@ python manage.py migrate
 python manage.py loaddatautf8 fixtures/initial_data.json
 ```
 
-### 8. Запустите django и react сервер:
+### 9. Запустите django и react сервер:
 - django
 ```
 cd backend 
