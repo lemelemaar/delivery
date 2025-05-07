@@ -17,7 +17,7 @@ npm -v
 ```
 ### 3. Скачайте и установите PostgreSQL https://www.postgresql.org/download/
 
-### 4. Клонируйте git репозиторий:
+### 4. Клонируйте git-репозиторий:
 ```commandline
 git clone https://github.com/lemelemaar/delivery.git
 ```
