@@ -63,6 +63,8 @@ PORT_DB=5432
 
 ### 7. Выполните миграции, выгрузите содержимое справочников:
 ```commandline
+cd ../backend
+
 python manage.py migrate
 
 python manage.py loaddata fixtures/initial_data.json
