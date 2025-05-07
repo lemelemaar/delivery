@@ -30,7 +30,7 @@ venv\Scripts\activate
 
 cd backend
 
-pip install -r requiments.txt
+pip install -r requirements.txt
 
 cd ../frontend
 
