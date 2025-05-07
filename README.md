@@ -36,3 +36,18 @@ cd ../frontend
 
 npm install
 ```
+python manage.py migrate
+python manage.py loaddata fixtures/your_model.json
+### 5.Создайте базу данных и пользователя, выдайте public права:
+```
+psql -U postgres
+
+CREATE DATABASE db_postgres;
+
+CREATE USER postgres WITH PASSWORD 'admin';
+
+GRANT ALL PRIVILEGES ON DATABASE db_postgres TO postgres;
+
+GRANT ALL PRIVILEGES ON SCHEMA public TO postgres;
+```
+
